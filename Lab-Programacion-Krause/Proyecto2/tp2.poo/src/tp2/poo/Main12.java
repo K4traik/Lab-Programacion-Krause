@@ -5,14 +5,14 @@ public class Main12 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
+		int[] array = new int[8];
 		
 		for(int i=0; i<8; i++) {
 			System.out.print("Ingrese el "+ (i+1) +" número: ");
 			array[i] = scanner.nextInt();
 		}
 		
-		int max = array[1], min = array[1];
+		int max = array[0], min = array[0];
 		
 		for(int i=0; i<8; i++) {
 			if(array[i] > max) {
