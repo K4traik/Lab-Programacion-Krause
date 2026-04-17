@@ -18,7 +18,7 @@ public class Menu {
 	public int getCaloriasTotales() {
 		return caloriasTotales;
 	}
-	public void setCaloriasTotales(int caloriasTotales) {
+	public void setCaloriasTotales(int caloriasTotales) { //Setter para no tener calorías negativas (?)
 		this.caloriasTotales = caloriasTotales;
 	}
 }

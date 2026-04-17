@@ -7,7 +7,7 @@ public abstract class Producto {
 	public Producto(int codigo, float precio) {
 		this.codigo = codigo;
 		this.precio = precio;
-	}
+	} // No se puede crear un objeto de esta clase porque es de tipo abstracta que solo sirve como esqueleto para otras clases.
 	
 	public float calcularPrecioFinal() {
 		return precio + (precio*20/100);
@@ -26,4 +26,3 @@ public abstract class Producto {
 		this.precio = precio;
 	}
 }
-// No se puede crear un objeto de esta clase porque es de tipo abstracta que solo sirve como esqueleto para otras clases.

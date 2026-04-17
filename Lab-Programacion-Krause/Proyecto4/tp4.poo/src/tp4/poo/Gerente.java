@@ -6,7 +6,7 @@ public class Gerente extends Empleado{
 	public Gerente(String legajo, float sueldoBase, float valorHoraExtra) {
 		super(legajo, sueldoBase);
 		this.valorHoraExtra = valorHoraExtra;
-	}
+	} //Al instanciar esta clase el objeto tendría 3 atributos totales.
 	
 	public float getValorHoraExtra() {
 		return valorHoraExtra;

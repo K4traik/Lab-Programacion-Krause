@@ -6,7 +6,7 @@ public class Colectivo extends Unidad {
 	public Colectivo(int idInterno, int capacidadPasajeros, int nroLinea) {
 		super(idInterno, capacidadPasajeros);
 		this.nroLinea = nroLinea;
-	}
+	} //Así se vería el método constructor.
 	
 	public int getNroLinea() {
 		return nroLinea;

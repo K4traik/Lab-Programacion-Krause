@@ -12,7 +12,7 @@ public class Socio {
 		this.nombre = nombre;
 	}
 	
-	public void añadirReserva(Reserva reserva) {
+	public void añadirReserva(Reserva reserva) { //Este es el método para añadir reservas al historial de un Socio.
 		historial.add(reserva);
 		System.out.println("Se ha añadido una reserva a nombre de " + nombre + ".");
 	}
