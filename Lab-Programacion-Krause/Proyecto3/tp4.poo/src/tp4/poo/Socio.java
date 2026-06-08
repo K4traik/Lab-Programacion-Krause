@@ -13,7 +13,7 @@ public class Socio {
 	}
 	
 	public void añadirLibro(Libro libro) {
-		libros.add(libro);
+		libros.add(libro); // Esto no te funcionaría por el simple hecho que debería de haber un this.libro = new Arraylist<>();
 		System.out.println("Socio "+ nombre +" ahora es dueño de "+ libro);
 	}
 	
