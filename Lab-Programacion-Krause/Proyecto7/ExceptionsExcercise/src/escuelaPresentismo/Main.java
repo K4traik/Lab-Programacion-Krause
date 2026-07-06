@@ -28,25 +28,31 @@ public class Main {
 		try {
 			System.out.println(escuela.getAlumnoByIndex(0).getDni());
 			System.out.println(escuela.getAlumnoByIndex(-2).getDni());
-		}catch(IllegalArgumentException e) {
+		}catch(IndexOutOfBoundsException e) {
 			System.out.println(e.getMessage());
 		}
 		
 		try {
 			escuela.getAlumnoByIndex(0).agregarInasistencias();
 			escuela.getAlumnoByIndex(1).agregarInasistencias();
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
 		}catch(InputMismatchException e) {
 			System.out.println(e.getMessage());
 		}
 		
 		try {
 			escuela.getAlumnoByIndex(1).getTutor().toString();
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
 		}catch(NullPointerException e) {
 			System.out.println(e.getMessage());
 		}
 		
 		try {
 			escuela.operacionAcademicaEspecial(escuela.getAlumnoByIndex(0));
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
 		}catch(AlumnoLibreException e) {
 			System.out.println(e.getMessage());
 		}

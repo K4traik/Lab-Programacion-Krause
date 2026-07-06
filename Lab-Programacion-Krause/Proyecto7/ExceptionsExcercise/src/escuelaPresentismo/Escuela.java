@@ -20,7 +20,7 @@ public class Escuela {
 	}
 	public Alumno getAlumnoByIndex(int index) {
 		if(index<0 || index>=alumnos.size()) {
-			throw new IllegalArgumentException("El índice es inválido.");
+			throw new IndexOutOfBoundsException("El índice es inválido.");
 		}
 		return alumnos.get(index);
 	}

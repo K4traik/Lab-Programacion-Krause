@@ -1,5 +1,7 @@
 package mundial;
 
+import java.util.InputMismatchException;
+
 import exceptions.JugadoresInsuficientesException;
 
 public class Main {
@@ -31,7 +33,9 @@ public class Main {
 		try {
 			canMexUsa.getSeleccionByIndex(4).agregarPuntos();
 			canMexUsa.getSeleccionByIndex(2).agregarPuntos();
-		}catch(IllegalArgumentException e) {
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
+		}catch(InputMismatchException e) {
 			System.out.println(e.getMessage());
 		}
 		

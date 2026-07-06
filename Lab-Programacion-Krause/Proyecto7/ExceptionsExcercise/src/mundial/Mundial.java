@@ -14,7 +14,7 @@ public class Mundial {
 	}
 	public Seleccion getSeleccionByIndex(int index){
 		if(index>=selecciones.size()||index<0) {
-			throw new IllegalArgumentException("El índice no coincide con alguna posición existente");
+			throw new IndexOutOfBoundsException("El índice no coincide con alguna posición existente");
 		}
 		return selecciones.get(index);
 	}
